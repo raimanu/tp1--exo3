@@ -1,10 +1,10 @@
 led.plot(0, 0)
 basic.forever(function () {
-    for (let colonne = 0; colonne <= 4; colonne++) {
-        if (led.point(0, 0)) {
-            basic.pause(100)
-            led.plot(0, 0)
-            led.unplot(0, colonne - 1)
+    for (let Ligne = 0; Ligne <= 4; Ligne++) {
+        for (let colonne = 0; colonne <= 5; colonne++) {
+            basic.pause(500)
+            led.plot(Ligne, colonne)
+            led.unplot(Ligne, colonne - 1)
         }
     }
 })
